@@ -9,16 +9,33 @@
     --vshojo-light-gray: #707070;
 }
 
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
 html{
     scroll-behavior:smooth;
 }
 
 body{
+    font-family:'Poppins', sans-serif;
     background-color: var(--white);
 }
 
-ul,
-li{
+h1,
+h2,
+h3{
+    font-weight:600;
+    margin-bottom:2rem;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
     list-style:none;
 }
 
@@ -26,6 +43,69 @@ li{
     display:inline;
 }
 
-a{
-    text-decoration:none;
+.grid{
+    display:grid;
+}
+
+.Talent-show{
+    margin-top:2.5rem;
+    margin-bottom:2.5rem;
+    grid-template-columns:repeat(6, 2fr);
+}
+
+.Talent-card{
+    overflow-x:hidden;
+}
+
+.Talent-img-Henya{
+    height:997px;
+    width:349px;
+    object-fit:cover;
+    background: #413853;
+}
+
+.Talent-img-Hajime{
+    height:997px;
+    width:349px;
+    object-fit:cover;
+    background: #442c17;
+}   
+
+.Talent-img-Apricot{
+    height:997px;
+    width:349px;
+    object-fit:cover;
+    background: #153906;
+    object-position: 35% 50%;
+}
+
+.Talent-img-Matara{
+    height:997px;
+    object-fit:cover;
+    background: #31252b;
+}
+
+.Talent-img-Haruka{
+    height:997px;
+    width:349px;
+    object-fit:cover;
+    background: #1c2a1e;
+}
+
+.Talent-img-Mouse{
+    height:997px;
+    width:349px;
+    object-fit:cover;
+    background: #f7a4bf;
+}
+
+::-webkit-scrollbar{
+    width:0.5rem;
+    background-color:#101010;
+    border-radius:1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#3b3c40;
+    border-radius:1rem;
 }
