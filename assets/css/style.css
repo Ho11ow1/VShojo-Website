@@ -148,7 +148,25 @@ header{
 
 /* ==================== MAIN VIEW 100%vh CSS ==================== */
 
+.Main-view{
 
+}
+
+.encourage-text{
+
+}
+
+.section-title{
+    line-height:130%;
+}
+
+.section-text{
+
+}
+
+.Talent-img-Melody{
+
+}
 
 ::-webkit-scrollbar{
     width:0.5rem;
