@@ -7,6 +7,9 @@
     --vshojo-pink: #F50F75;
     --vshojo-dark-gray: #2A2A2A;
     --vshojo-light-gray: #707070;
+
+    --hero-color:#B1E0E9;
+    --background-color:#FFD4FA;
 }
 
 *{
@@ -51,7 +54,6 @@ li{
 }
 
 .Talent-show{
-    margin-top:2.5rem;
     margin-bottom:2.5rem;
     grid-template-columns:repeat(6, 2fr);
 }
@@ -103,18 +105,20 @@ li{
 
 /* ==================== Naviagation CSS ==================== */
 
-header{
+/* header{
     width: 100%;
     background-color: var(--vshojo-dark-gray);
-    position:fixed;
     top:0;
     left:0;
     z-index:100;
     transition:.4s;
     padding-top:.5rem;
-}
+}  */
+/* For Static Nav-bar */
+
 
 .nav {
+    margin-top:.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,24 +153,51 @@ header{
 /* ==================== MAIN VIEW 100%vh CSS ==================== */
 
 .Main-view{
-
+    margin-top:7rem;
+    grid-template-columns:repeat(2, 1fr);
 }
 
 .encourage-text{
+    height:300px;
 
+    margin-top:auto;
+    margin-bottom:auto;
+
+    margin-left:14rem;
 }
 
 .section-title{
     line-height:130%;
+    color:var(--vshojo-pink);
+    font-weight:700;
+    font-size:4rem;
+}
+
+h2.section-title{
+    margin-bottom:0;
 }
 
 .section-text{
+    color:var(--vshojo-pink);
+    font-weight:300;
+    font-size:1.5rem;
+}
 
+.astro-XNOXSESQ{
+    fill: currentColor;
+}
+
+.astro-J7PV25F6{
+    transform: scaleX(2);
+    transform-origin: center left;
 }
 
 .Talent-img-Melody{
-
+    width:849px;
+    object-fit:cover;
 }
+
+
 
 ::-webkit-scrollbar{
     width:0.5rem;
