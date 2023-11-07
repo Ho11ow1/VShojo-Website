@@ -42,7 +42,74 @@ ul{
 
 /* ==================== TALENTS CSS ==================== */
 
+.grid{
+    display:grid;
+}
 
+.flex{
+    display:flex;
+    flex-direction:column;
+}
+
+.container{
+    
+}
+
+.Talent-overview{
+
+}
+
+.Talent-select{
+
+}
+
+.Talent-card{
+
+}
+
+.Talent-Socials{
+
+}
+
+.Talent-img-{
+
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
+
+.Talent-img-{
+    
+}
 
 ::-webkit-scrollbar{
     width:0.5rem;
