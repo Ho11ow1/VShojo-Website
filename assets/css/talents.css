@@ -75,15 +75,80 @@ ul{
 
 /* ==================== SOCIAL STYLES ==================== */
 
-.Talent-Socials{
-    margin-right: 2rem;
-    flex-direction: column;
-    justify-content: center;
+.Talent-socials{
+    gap:1rem;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.Talent-social-img-twitch{
+    padding:.35rem;
+    border:3px solid var(--white);
+    border-radius:50%;
+
+    background:var(--Geega-color);
+}
+
+.Talent-social-img-twitter{
+    padding:.35rem;
+    border:3px solid var(--white);
+    border-radius:50%;
+
+    background:var(--Geega-color);
+}
+
+.Talent-social-img-youtube{
+    padding:.35rem;
+    border:3px solid var(--white);
+    border-radius:50%;
+
+    background:var(--Geega-color);
 }
 
 /* ==================== TALENT CARD STYLES ==================== */
 
+.Talent-card{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    row-gap:2.25rem;
 
+    max-width:400px;
+}
+
+.Talent-img{
+    border:1px solid var(--white);
+    border-radius:15%;
+    object-fit:cover;
+
+    box-shadow: 5px 5px 4px 4px var(--black); /* Right, Down, Left, Top */
+}
+
+.Talent-show{
+    max-width:1600px;
+    margin-top:7.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    column-gap:5rem;
+    row-gap:8rem;
+
+    grid-template-columns:repeat(3, 1fr);
+}
+
+.Talent-name{
+    margin-left:auto;
+    margin-right:auto;
+    grid-column:2/2;
+}
+
+/* ==================== TALENT CARD GEEGA ==================== */
+
+.Talent-img-Geega-mini{
+    background:var(--Geega-color);
+}
+
+a.Talent-mini-Geega{
+    color:inherit;
+}
 
 /* ==================== Naviagation CSS ==================== */
 
