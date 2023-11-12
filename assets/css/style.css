@@ -47,6 +47,63 @@ li{
     display:inline;
 }
 
+img{
+    max-width:100%;
+    height:auto;
+    vertical-align:middle;
+    font-style:italic;
+    background-repeat:no-repeat;
+    background-size:cover;
+    shape-margin:.75rem;;
+}
+
+/* ==================== MAIN VIEW 100%vh CSS ==================== */
+
+.Main-view{
+    margin-top:7rem;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+.encourage-text{
+    height:300px;
+
+    margin-top:auto;
+    margin-bottom:auto;
+
+    margin-left:14rem;
+}
+
+.section-title{
+    line-height:130%;
+    color:var(--vshojo-pink);
+    font-weight:700;
+    font-size:4rem;
+}
+
+h2.section-title{
+    margin-bottom:0;
+}
+
+.section-text{
+    color:var(--vshojo-pink);
+    font-weight:300;
+    font-size:1.5rem;
+}
+
+.astro-XNOXSESQ{
+    fill: currentColor;
+}
+
+.astro-J7PV25F6{
+    transform: scaleX(2);
+    transform-origin: center left;
+}
+
+.Talent-img-Melody{
+    width:849px;
+    object-fit:cover;
+}
+
 /* ==================== TALENT CSS ==================== */
 
 .grid{
@@ -118,7 +175,7 @@ li{
 
 
 .nav {
-    margin-top:.75rem;
+    margin-top:2.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +185,7 @@ li{
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1750px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -149,55 +206,6 @@ li{
     width:130px;
     object-fit:contain;
 }
-
-/* ==================== MAIN VIEW 100%vh CSS ==================== */
-
-.Main-view{
-    margin-top:7rem;
-    grid-template-columns:repeat(2, 1fr);
-}
-
-.encourage-text{
-    height:300px;
-
-    margin-top:auto;
-    margin-bottom:auto;
-
-    margin-left:14rem;
-}
-
-.section-title{
-    line-height:130%;
-    color:var(--vshojo-pink);
-    font-weight:700;
-    font-size:4rem;
-}
-
-h2.section-title{
-    margin-bottom:0;
-}
-
-.section-text{
-    color:var(--vshojo-pink);
-    font-weight:300;
-    font-size:1.5rem;
-}
-
-.astro-XNOXSESQ{
-    fill: currentColor;
-}
-
-.astro-J7PV25F6{
-    transform: scaleX(2);
-    transform-origin: center left;
-}
-
-.Talent-img-Melody{
-    width:849px;
-    object-fit:cover;
-}
-
-
 
 ::-webkit-scrollbar{
     width:0.5rem;
