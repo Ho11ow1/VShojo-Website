@@ -7,6 +7,7 @@
     --vshojo-pink: #F50F75;
     --vshojo-dark-gray: #2A2A2A;
     --vshojo-light-gray: #707070;
+    --background-color:#FFD4FA;
 }
 
 *{
@@ -21,7 +22,7 @@ html{
 
 body{
     font-family:'Poppins', sans-serif;
-    background-color: var(--white);
+    background:linear-gradient(var(--white),var(--background-color) 100vh);
 }
 
 h1,
@@ -51,11 +52,34 @@ ul{
 }
 
 .section{
-    
+    max-width:960px;
+
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .Talent-overview{
+    margin-top:5.5rem;
+    justify-content:space-between;
+}
 
+/* ==================== TALENT OVERVIEW ==================== */
+
+.section-title{
+    font-size: 5rem;
+    font-weight:600;
+    letter-spacing: -.125rem;
+    line-height: 95%;
+
+    max-width:440px;
+}
+
+.section-text{
+    max-width:440px;
+    font-size: 1.5rem;
+    line-height:125%;
+
+    margin-top:1rem;
 }
 
 /* ==================== ROOT SOCIAL COLORS ==================== */
@@ -107,31 +131,24 @@ ul{
 
 /* ==================== TALENT CARD STYLES ==================== */
 
-.Talent-card{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    row-gap:2.25rem;
-
-    max-width:400px;
-}
-
-.Talent-img{
-    border:1px solid var(--white);
-    border-radius:15%;
-    object-fit:cover;
-
-    box-shadow: 5px 5px 4px 4px var(--black); /* Right, Down, Left, Top */
-}
-
 .Talent-show{
     max-width:1600px;
-    margin-top:7.5rem;
+    margin-top:11.5rem;
     margin-left:auto;
     margin-right:auto;
     column-gap:5rem;
     row-gap:8rem;
 
     grid-template-columns:repeat(3, 1fr);
+}
+
+.Talent-area{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    row-gap:2.25rem;
+
+    max-width:380px;
+    height:412px;
 }
 
 .Talent-name{
@@ -142,12 +159,48 @@ ul{
 
 /* ==================== TALENT CARD GEEGA ==================== */
 
-.Talent-img-Geega-mini{
-    background:var(--Geega-color);
+.talent-img-area{
+    border:1px solid #000;
+
+    border-radius:15%;
+
+    background:url(./Mini/Geega-img-mini.png);
+    background-color:#521830;
+    background-repeat:no-repeat;
+
+    object-fit:cover;
+    width:302px;
+    height:302px;
+
+    box-shadow: 5px 5px 4px 4px #000;
 }
 
-a.Talent-mini-Geega{
-    color:inherit;
+.talent-speech-area{
+    place-items: center;
+    text-align: center;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    will-change: opacity;
+
+    border-radius:15%;
+    height:inherit;
+
+    background: #ffffffc0;
+    padding: 1.2rem;
+}
+
+.talent-speech-area:hover{
+    transition: opacity .2s ease-in-out;
+    will-change: opacity;
+    opacity:1;
+}
+
+p.talent-speech{
+    color:var(--vshojo-dark-gray);
 }
 
 /* ==================== Naviagation CSS ==================== */
@@ -165,7 +218,7 @@ a.Talent-mini-Geega{
 
 
 .nav {
-    margin-top:.75rem;
+    margin-top:2.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +228,7 @@ a.Talent-mini-Geega{
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1750px;
     margin-left: auto;
     margin-right: auto;
 }
