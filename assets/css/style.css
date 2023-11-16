@@ -110,8 +110,11 @@ h2.section-title{
     display:grid;
 }
 
+.flex{
+    display:flex;
+}
+
 .Talent-show{
-    margin-bottom:2.5rem;
     grid-template-columns:repeat(6, 2fr);
 }
 
@@ -160,7 +163,127 @@ h2.section-title{
     background: #f7a4bf;
 }
 
-/* ==================== Naviagation CSS ==================== */
+/* ==================== COMPANIES CSS ====================  COPY ALL SITES*/
+
+.companies{
+    overflow-x:hidden;
+}
+
+.companies-animation{
+    align-items:center;
+    height:8.25rem;
+    width:fit-content;
+    animation:companies 24s linear infinite;
+    will-change:transform;
+}
+
+.companies-logos{
+    width:8rem;
+    height:3.75rem;
+    margin: 0 2rem;
+}
+
+@keyframes companies
+{
+    0% {
+        transform:translate(0);
+    }
+    
+    100% {
+        transform:translate(-25%);
+    }
+}
+
+/* ==================== FOOTER CSS ====================  COPY ALL SITES*/
+
+.footer{
+    background:var(--vshojo-dark-gray);
+    color:var(--white);
+
+    padding-top:3.125rem;
+    padding-bottom:3.125rem;    
+}
+
+.footer-content{
+    max-width:1780px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*===== Footer list items CSS =====*/
+
+.socials-list-items{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.125rem;
+}
+
+.links-list-items{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+}
+
+.socials-list-items{
+    margin-right:1.75rem;
+}
+
+h3.footer-titles{
+    margin-bottom:.75rem;
+}
+
+.contact-logo > img{
+    margin-bottom:.75rem;
+}
+
+/*===== Footer list CSS =====*/
+
+
+.contact-list{
+    margin-left:auto;
+}
+
+.socials-list{
+    padding-left:3rem;
+}
+
+.links-list-items > li > a{
+    color:var(--white);
+}
+
+.contact-address{
+    display:block;
+    width:120px;
+    line-height:115%;
+}
+
+.footer-titles{
+    color:var(--vshojo-light-gray);
+    font-weight:400;
+}
+
+/*===== Footer list After:Elements CSS =====*/
+
+.socials-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+
+.contact-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+
+.links-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+/* ==================== Naviagation CSS ====================  COPY ALL SITES*/
 
 /* header{
     width: 100%;
