@@ -51,3 +51,186 @@ img{
     shape-margin:.75rem;;
 }
 
+/*==================== LEGAL CSS ====================*/
+
+.section{
+    max-width:960px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.Legal-text{
+    margin-top:4rem;
+}
+
+.legal-title{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align:center;
+    margin-bottom:4rem;
+}
+
+.legal-list{
+    margin-bottom:2.75rem;
+}
+
+.section-text{
+    margin-bottom:1.25rem;
+}
+
+p.section-text{
+    line-height:160%;
+}
+
+/* ==================== FOOTER CSS ====================  COPY ALL SITES*/
+
+.flex{
+    display:flex;
+}
+
+.footer{
+    background:var(--vshojo-dark-gray);
+    color:var(--white);
+
+    padding-top:3.125rem;
+    padding-bottom:3.125rem;    
+}
+
+.footer-content{
+    max-width:1780px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*===== Footer list items CSS =====*/
+
+.socials-list-items{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.125rem;
+}
+
+.links-list-items{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+}
+
+.socials-list-items{
+    margin-right:1.75rem;
+}
+
+h3.footer-titles{
+    margin-bottom:.75rem;
+}
+
+.contact-logo > img{
+    margin-bottom:.75rem;
+}
+
+/*===== Footer list CSS =====*/
+
+
+.contact-list{
+    margin-left:auto;
+}
+
+.socials-list{
+    padding-left:3rem;
+}
+
+.links-list-items > li > a{
+    color:var(--white);
+}
+
+.contact-address{
+    display:block;
+    width:120px;
+    line-height:115%;
+}
+
+.footer-titles{
+    color:var(--vshojo-light-gray);
+    font-weight:400;
+}
+
+/*===== Footer list After:Elements CSS =====*/
+
+.socials-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+
+.contact-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+
+.links-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
+}
+
+/* ==================== Naviagation CSS ====================  COPY ALL SITES*/
+
+/* header{
+    width: 100%;
+    background-color: var(--vshojo-dark-gray);
+    top:0;
+    left:0;
+    z-index:100;
+    transition:.4s;
+    padding-top:.5rem;
+}  */
+/* For Static Nav-bar */
+
+
+.nav {
+    margin-top:2.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: calc(3.5rem + 1.5rem);
+    column-gap: 3rem;
+}
+
+.container {
+    max-width: 1750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav__menu {
+    margin-left: auto;
+}
+
+.nav__list {
+    display:flex;
+    flex-direction:row;
+    column-gap:3.5rem;
+    row-gap:1.5rem;
+}
+
+.nav-img{
+    height:200px;
+    width:130px;
+    object-fit:contain;
+}
+
+::-webkit-scrollbar{
+    width:0.5rem;
+    background-color:#101010;
+    border-radius:1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#3b3c40;
+    border-radius:1rem;
+}
