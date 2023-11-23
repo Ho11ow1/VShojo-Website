@@ -24,7 +24,6 @@ html{
 
 body{
     font-family:'Poppins', sans-serif;
-    background-color: var(--white);
 }
 
 h1,
@@ -65,19 +64,17 @@ img{
 }
 
 .encourage-text{
-    height:300px;
-
-    margin-top:auto;
+    margin-top:25%;
     margin-bottom:auto;
 
-    margin-left:14rem;
+    margin-left:10rem;
 }
 
 .section-title{
     line-height:130%;
     color:var(--vshojo-pink);
     font-weight:700;
-    font-size:4rem;
+    font-size:3.5rem;
 }
 
 h2.section-title{
@@ -115,10 +112,17 @@ h2.section-title{
 }
 
 .Talent-show{
-    grid-template-columns:repeat(6, 2fr);
+    grid-template-columns:repeat(6, 1fr);
+    overflow-x:hidden;
+    max-width:1920px;
+    width:100%;
 }
 
 .Talent-card{
+    overflow-x:hidden;
+}
+
+.Melody-card{
     overflow-x:hidden;
 }
 
@@ -167,12 +171,15 @@ h2.section-title{
 
 .companies{
     overflow-x:hidden;
+    overflow-y:hidden;
+
+    background: #120f0f;
 }
 
 .companies-animation{
     align-items:center;
     height:8.25rem;
-    width:fit-content;
+    max-width:fit-content;
     animation:companies 24s linear infinite;
     will-change:transform;
 }
@@ -180,7 +187,7 @@ h2.section-title{
 .companies-logos{
     width:8rem;
     height:3.75rem;
-    margin: 0 2rem;
+    margin:0 2rem;
 }
 
 @keyframes companies
@@ -201,11 +208,14 @@ h2.section-title{
     color:var(--white);
 
     padding-top:3.125rem;
-    padding-bottom:3.125rem;    
+    padding-bottom:3.125rem;
+
+    overflow-x:hidden;
 }
 
 .footer-content{
     max-width:1780px;
+    width:100%;
 
     margin-left:auto;
     margin-right:auto;
@@ -309,8 +319,11 @@ h3.footer-titles{
 
 .container {
     max-width: 1750px;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
+    padding-right:1rem;
+    padding-left:1rem;
 }
 
 .nav__menu {
@@ -340,3 +353,66 @@ h3.footer-titles{
     background-color:#3b3c40;
     border-radius:1rem;
 }
+
+@media (max-width:1440px)
+{
+    .links-list{
+        margin-left:1.5rem;
+    }
+
+    .contact-list{
+        margin-right:1.5rem;
+    }
+
+    .encourage-text{
+        margin-left:7rem;
+    }
+
+    .container{
+        width:93%;
+    }
+
+    h2.section-title{
+        font-size:4rem;
+    }
+
+    .section-title{
+        width:672px;
+    }
+
+    .Talent-show{
+        grid-template-columns:repeat(4, 1fr);
+    }
+
+    .Talent-card:nth-child(1){
+        background:var(--black);
+    }
+
+    .Talent-card:nth-child(2){
+        background:var(--black);
+    }
+
+    .Talent-card:nth-child(3){
+        background:var(--black);
+    }
+
+    .Talent-img-Haruka{
+        display:none;
+    }
+
+    .Talent-img-Mouse{
+        display:none;
+    }
+
+    .Talent-img-Matara,
+    .Talent-img-Apricot,
+    .Talent-img-Hajime,
+    .Talent-img-Henya{
+        width:100%;
+    }
+
+    .footer-content{
+        width:93%;
+    }
+}
+
