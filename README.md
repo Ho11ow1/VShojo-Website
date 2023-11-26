@@ -1,4 +1,4 @@
 # VShojo-Website
 VShojo website remake
 
-## Project put on hold. (Reworking the whole website)
+## Project put on hold. (Website rework)
