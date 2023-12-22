@@ -56,53 +56,6 @@ img{
     shape-margin:.75rem;;
 }
 
-/* ==================== MAIN VIEW 100%vh CSS ==================== */
-
-.Main-view{
-    margin-top:7rem;
-    grid-template-columns:repeat(2, 1fr);
-}
-
-.encourage-text{
-    margin-top:25%;
-    margin-bottom:auto;
-
-    margin-left:10rem;
-}
-
-.section-title{
-    line-height:130%;
-    color:var(--vshojo-pink);
-    font-weight:700;
-    font-size:3.5rem;
-}
-
-h2.section-title{
-    margin-bottom:0;
-}
-
-.section-text{
-    color:var(--vshojo-pink);
-    font-weight:300;
-    font-size:1.5rem;
-}
-
-.astro-XNOXSESQ{
-    fill: currentColor;
-}
-
-.astro-J7PV25F6{
-    transform: scaleX(2);
-    transform-origin: center left;
-}
-
-.Talent-img-Melody{
-    width:849px;
-    object-fit:cover;
-}
-
-/* ==================== TALENT CSS ==================== */
-
 .grid{
     display:grid;
 }
@@ -111,63 +64,15 @@ h2.section-title{
     display:flex;
 }
 
-.Talent-show{
-    grid-template-columns:repeat(6, 1fr);
-    overflow-x:hidden;
-    max-width:1920px;
-    width:100%;
-}
+/* ==================== MAIN VIEW 100%vh CSS ==================== */
 
-.Talent-card{
-    overflow-x:hidden;
-}
 
-.Melody-card{
-    overflow-x:hidden;
-}
 
-.Talent-img-Henya{
-    height:997px;
-    width:349px;
-    object-fit:cover;
-    background: #413853;
-}
+/* ==================== TALENT CSS ==================== */
 
-.Talent-img-Hajime{
-    height:997px;
-    width:349px;
-    object-fit:cover;
-    background: #442c17;
-}   
 
-.Talent-img-Apricot{
-    height:997px;
-    width:349px;
-    object-fit:cover;
-    background: #153906;
-}
 
-.Talent-img-Matara{
-    height:997px;
-    object-fit:cover;
-    background: #31252b;
-}
-
-.Talent-img-Haruka{
-    height:997px;
-    width:349px;
-    object-fit:cover;
-    background: #1c2a1e;
-}
-
-.Talent-img-Mouse{
-    height:997px;
-    width:349px;
-    object-fit:cover;
-    background: #f7a4bf;
-}
-
-/* ==================== COMPANIES CSS ====================  COPY ALL SITES*/
+/* ==================== COMPANIES CSS ==================== */
 
 .companies{
     overflow-x:hidden;
@@ -201,147 +106,23 @@ h2.section-title{
     }
 }
 
-/* ==================== FOOTER CSS ====================  COPY ALL SITES*/
+/* ==================== FOOTER CSS ==================== */
 
-.footer{
-    background:var(--vshojo-dark-gray);
-    color:var(--white);
 
-    padding-top:3.125rem;
-    padding-bottom:3.125rem;
-
-    overflow-x:hidden;
-}
-
-.footer-content{
-    max-width:1780px;
-    width:100%;
-
-    margin-left:auto;
-    margin-right:auto;
-}
 
 /*===== Footer list items CSS =====*/
 
-.socials-list-items{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:1.125rem;
-}
 
-.links-list-items{
-    display:flex;
-    flex-direction:column;
-    gap:.5rem;
-}
-
-.socials-list-items{
-    margin-right:1.75rem;
-}
-
-h3.footer-titles{
-    margin-bottom:.75rem;
-}
-
-.contact-logo > img{
-    margin-bottom:.75rem;
-}
 
 /*===== Footer list CSS =====*/
 
 
-.contact-list{
-    margin-left:auto;
-}
-
-.socials-list{
-    padding-left:3rem;
-}
-
-.links-list-items > li > a{
-    color:var(--white);
-}
-
-.contact-address{
-    display:block;
-    width:120px;
-    line-height:115%;
-}
-
-.footer-titles{
-    color:var(--vshojo-light-gray);
-    font-weight:400;
-}
 
 /*===== Footer list After:Elements CSS =====*/
 
-.socials-list > .footer-titles:first-child::after{
-    display: block;
-    content: "\2014";
-    line-height: .25rem;
-}
-
-.contact-list > .footer-titles:first-child::after{
-    display: block;
-    content: "\2014";
-    line-height: .25rem;
-}
-
-.links-list > .footer-titles:first-child::after{
-    display: block;
-    content: "\2014";
-    line-height: .25rem;
-}
-/* ==================== Naviagation CSS ====================  COPY ALL SITES*/
-
-/* header{
-    width: 100%;
-    background-color: var(--vshojo-dark-gray);
-    top:0;
-    left:0;
-    z-index:100;
-    transition:.4s;
-    padding-top:.5rem;
-}  */
-/* For Static Nav-bar */
 
 
-.nav {
-    margin-top:2.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: calc(3.5rem + 1.5rem);
-    column-gap: 3rem;
-}
-
-.container {
-    max-width: 1750px;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right:1rem;
-    padding-left:1rem;
-}
-
-.nav__menu {
-    margin-left: auto;
-}
-
-.nav__list {
-    display:flex;
-    flex-direction:row;
-    column-gap:3.5rem;
-    row-gap:1.5rem;
-}
-
-.nav-img{
-    height:200px;
-    width:130px;
-    object-fit:contain;
-}
+/* ==================== Naviagation CSS ==================== */
 
 ::-webkit-scrollbar{
     width:0.5rem;
@@ -354,65 +135,230 @@ h3.footer-titles{
     border-radius:1rem;
 }
 
-@media (max-width:1440px)
-{
-    .links-list{
-        margin-left:1.5rem;
-    }
-
-    .contact-list{
-        margin-right:1.5rem;
+@media (max-width:1920px){
+    /* ==================== MAIN VIEW 100%vh CSS ==================== */
+    .Main-view{
+        margin-top:7rem;
+        grid-template-columns:repeat(2, 1fr);
     }
 
     .encourage-text{
-        margin-left:7rem;
-    }
+        margin-top:25%;
+        margin-bottom:auto;
 
-    .container{
-        width:93%;
-    }
-
-    h2.section-title{
-        font-size:4rem;
+        margin-left:10rem;
     }
 
     .section-title{
-        width:672px;
+        line-height:130%;
+        color:var(--vshojo-pink);
+        font-weight:700;
+        font-size:3.5rem;
     }
 
+    h2.section-title{
+        margin-bottom:0;
+    }
+
+    .section-text{
+        color:var(--vshojo-pink);
+        font-weight:300;
+        font-size:1.5rem;
+    }
+
+    .astro-XNOXSESQ{
+        fill: currentColor;
+    }
+
+    .astro-J7PV25F6{
+        transform: scaleX(2);
+        transform-origin: center left;
+    }
+
+    .Talent-img-Melody{
+        width:849px;
+        object-fit:cover;
+    }
+
+    /* ==================== TALENT CSS ==================== */
     .Talent-show{
-        grid-template-columns:repeat(4, 1fr);
-    }
-
-    .Talent-card:nth-child(1){
-        background:var(--black);
-    }
-
-    .Talent-card:nth-child(2){
-        background:var(--black);
-    }
-
-    .Talent-card:nth-child(3){
-        background:var(--black);
-    }
-
-    .Talent-img-Haruka{
-        display:none;
-    }
-
-    .Talent-img-Mouse{
-        display:none;
-    }
-
-    .Talent-img-Matara,
-    .Talent-img-Apricot,
-    .Talent-img-Hajime,
-    .Talent-img-Henya{
+        grid-template-columns:repeat(6, 1fr);
+        overflow-x:hidden;
+        max-width:1920px;
         width:100%;
     }
 
+    .Talent-card{
+        overflow-x:hidden;
+    }
+
+    .Melody-card{
+        overflow-x:hidden;
+    }
+
+    .Talent-img-Henya{
+        height:997px;
+        width:349px;
+        object-fit:cover;
+        background: #413853;
+    }
+
+    .Talent-img-Hajime{
+        height:997px;
+        width:349px;
+        object-fit:cover;
+        background: #442c17;
+    }   
+
+    .Talent-img-Apricot{
+        height:997px;
+        width:349px;
+        object-fit:cover;
+        background: #153906;
+    }
+
+    .Talent-img-Matara{
+        height:997px;
+        object-fit:cover;
+        background: #31252b;
+    }
+
+    .Talent-img-Haruka{
+        height:997px;
+        width:349px;
+        object-fit:cover;
+        background: #1c2a1e;
+    }
+
+    .Talent-img-Mouse{
+        height:997px;
+        width:349px;
+        object-fit:cover;
+        background: #f7a4bf;
+    }
+
+    /* ==================== FOOTER CSS ====================  COPY ALL SITES*/
+    .footer{
+        background:var(--vshojo-dark-gray);
+        color:var(--white);
+
+        padding-top:3.125rem;
+        padding-bottom:3.125rem;
+
+        overflow-x:hidden;
+    }
+
     .footer-content{
-        width:93%;
+        max-width:1780px;
+        width:100%;
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /*===== Footer list items CSS =====*/
+    .socials-list-items{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:1.125rem;
+    }
+
+    .links-list-items{
+        display:flex;
+        flex-direction:column;
+        gap:.5rem;
+    }
+
+    .socials-list-items{
+        margin-right:1.75rem;
+    }
+
+    h3.footer-titles{
+        margin-bottom:.75rem;
+    }
+
+    .contact-logo > img{
+        margin-bottom:.75rem;
+    }
+
+    /*===== Footer list CSS =====*/
+    .contact-list{
+        margin-left:auto;
+    }
+
+    .socials-list{
+        padding-left:3rem;
+    }
+
+    .links-list-items > li > a{
+        color:var(--white);
+    }
+
+    .contact-address{
+        display:block;
+        width:120px;
+        line-height:115%;
+    }
+
+    .footer-titles{
+        color:var(--vshojo-light-gray);
+        font-weight:400;
+    }
+
+    /*===== Footer list After:Elements CSS =====*/
+    .socials-list > .footer-titles:first-child::after{
+        display: block;
+        content: "\2014";
+        line-height: .25rem;
+    }
+
+    .contact-list > .footer-titles:first-child::after{
+        display: block;
+        content: "\2014";
+        line-height: .25rem;
+    }
+
+    .links-list > .footer-titles:first-child::after{
+        display: block;
+        content: "\2014";
+        line-height: .25rem;
+    }
+
+    /* ==================== Naviagation CSS ====================  COPY ALL SITES*/
+    .nav {
+        margin-top:2.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: calc(3.5rem + 1.5rem);
+        column-gap: 3rem;
+    }
+    
+    .container {
+        max-width: 1750px;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    .nav__menu {
+        margin-left: auto;
+    }
+    
+    .nav__list {
+        display:flex;
+        flex-direction:row;
+        column-gap:3.5rem;
+        row-gap:1.5rem;
+    }
+    
+    .nav-img{
+        height:200px;
+        width:130px;
+        object-fit:contain;
     }
 }
-

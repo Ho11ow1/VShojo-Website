@@ -51,8 +51,6 @@ img{
     shape-margin:.75rem;;
 }
 
-/* ==================== TALENTS CSS ==================== */
-
 .grid{
     display:grid;
 }
@@ -61,36 +59,18 @@ img{
     display:flex;
 }
 
-.section{
-    max-width:960px;
-
-    margin-left:auto;
-    margin-right:auto;
+mark{
+    color:var(--vshojo-pink);
+    background-color:inherit;
 }
 
-.Talent-overview{
-    margin-top:5.5rem;
-    justify-content:space-between;
-}
+/* ==================== TALENTS CSS ==================== */
+
+
 
 /* ==================== TALENT OVERVIEW ==================== */
 
-.section-title{
-    font-size: 5rem;
-    font-weight:600;
-    letter-spacing: -.125rem;
-    line-height: 95%;
 
-    max-width:440px;
-}
-
-.section-text{
-    max-width:440px;
-    font-size: 1.5rem;
-    line-height:125%;
-
-    margin-top:1rem;
-}
 
 /* ==================== ROOT SOCIAL COLORS ==================== */
 
@@ -109,73 +89,31 @@ img{
 
 /* ==================== SOCIAL STYLES ==================== */
 
-.Talent-socials{
-    gap:1rem;
-    flex-direction:column;
-    justify-content:center;
-}
-
 .Talent-social-img-twitch{
     padding:.35rem;
     border:3px solid var(--white);
     border-radius:50%;
-
-    background:var(--Geega-color);
 }
 
 .Talent-social-img-twitter{
     padding:.35rem;
     border:3px solid var(--white);
     border-radius:50%;
-
-    background:var(--Geega-color);
 }
 
 .Talent-social-img-youtube{
     padding:.35rem;
     border:3px solid var(--white);
     border-radius:50%;
-
-    background:var(--Geega-color);
 }
 
 /* ==================== TALENT CARD STYLES ==================== */
-
-.Talent-show{
-    max-width:1600px;
-    margin-top:11.5rem;
-    margin-left:auto;
-    margin-right:auto;
-    column-gap:5rem;
-    row-gap:8rem;
-
-    grid-template-columns:repeat(3, 1fr);
-}
-
-.Talent-area{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    row-gap:2.25rem;
-
-    max-width:380px;
-    height:412px;
-}
-
-.Talent-name{
-    margin-left:auto;
-    margin-right:auto;
-    grid-column:2/2;
-}
-
-/* ==================== TALENT CARD GEEGA ==================== */
 
 .talent-img-area{
     border:1px solid #000;
 
     border-radius:15%;
 
-    background:url(./Mini/Geega-img-mini.png);
-    background-color:#521830;
     background-repeat:no-repeat;
 
     object-fit:cover;
@@ -185,80 +123,120 @@ img{
     box-shadow: 5px 5px 4px 4px #000;
 }
 
-.talent-speech-area{
-    place-items: center;
-    text-align: center;
-    
-    font-size: 1.2rem;
-    font-weight: 600;
-    
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-    will-change: opacity;
+/* ==================== TALENT CARD CODE STYLES ==================== */
 
-    border-radius:15%;
-    height:inherit;
-
-    background: #ffffffc0;
-    padding: 1.2rem;
+.Geega{
+    background:var(--Geega-color);
+    background-image:url(./Mini/Geega-img-mini.png);
 }
 
-.talent-speech-area:hover{
-    transition: opacity .2s ease-in-out;
-    will-change: opacity;
-    opacity:1;
+.Talent-social-img-twitch.Geega,
+.Talent-social-img-twitter.Geega,
+.Talent-social-img-youtube.Geega{
+    background:var(--Geega-color);
 }
 
-p.talent-speech{
-    color:var(--vshojo-dark-gray);
+.Matara{
+    background:var(--Matara-color);
+    background-image:url(./Mini/Matara-img-mini.png);
+}
+
+.Haruka{
+    background:var(--Haruka-color);
+    background-image:url(./Mini/Haruka-img-mini.png);
+}
+
+.Talent-social-img-twitch.Haruka,
+.Talent-social-img-twitter.Haruka,
+.Talent-social-img-youtube.Haruka{
+    background:var(--Haruka-color);
+}
+
+.Henya{
+    background:var(--Henya-color);
+    background-image:url(./Mini/Henya-img-mini.png);
+}
+
+.Kson{
+    background:var(--Kson-color);
+    background-image:url(./Mini/Kson-img-mini.png);
+}
+
+.Talent-social-img-twitch.Kson,
+.Talent-social-img-twitter.Kson,
+.Talent-social-img-youtube.Kson{
+    background:var(--Kson-color);
+}
+
+.Melody{
+    background:var(--Melody-color);
+    background-image:url(./Mini/Melody-img-mini.png);
+}
+
+.Hajime{
+    background:var(--Hajime-color);
+    background-image:url(./Mini/Hime_Hajime-img-mini.png);
+}
+
+.Talent-social-img-twitch.Hajime,
+.Talent-social-img-twitter.Hajime,
+.Talent-social-img-youtube.Hajime{
+    background:var(--Hajime-color);
+}
+
+.Apricot{
+    background:var(--Apricot-color);
+    background-image:url(./Mini/Apricot_Lich-img-mini.png);
+}
+
+.Talent-social-img-twitch.Apricot,
+.Talent-social-img-twitter.Apricot,
+.Talent-social-img-youtube.Apricot{
+    background:var(--Apricot-color);
+}
+
+.Iron_Mouse{
+    background:var(--Iron_Mouse-color);
+    background-image:url(./Mini/Iron_Mouse-img-mini.png);
+}
+
+.Talent-social-img-twitch.Iron_Mouse,
+.Talent-social-img-twitter.Iron_Mouse,
+.Talent-social-img-youtube.Iron_Mouse{
+    background:var(--Iron_Mouse-color);
+}
+
+.Nazuna{
+    background:var(--Nazuna-color);
+    background-image:url(./Mini/Nazuna-img-mini.png);
 }
 
 /* ==================== Naviagation CSS ==================== */
 
-/* header{
-    width: 100%;
-    background-color: var(--vshojo-dark-gray);
-    top:0;
-    left:0;
-    z-index:100;
-    transition:.4s;
-    padding-top:.5rem;
-}  */
-/* For Static Nav-bar */
 
 
-.nav {
-    margin-top:2.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ======================= FOOTER CSS =====================*/
 
-    height: calc(3.5rem + 1.5rem);
-    column-gap: 3rem;
+/*===== Footer list After:Elements CSS =====*/
+.socials-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
 }
 
-.container {
-    max-width: 1750px;
-    margin-left: auto;
-    margin-right: auto;
+.contact-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
 }
 
-.nav__menu {
-    margin-left: auto;
+.links-list > .footer-titles:first-child::after{
+    display: block;
+    content: "\2014";
+    line-height: .25rem;
 }
 
-.nav__list {
-    display:flex;
-    flex-direction:row;
-    column-gap:3.5rem;
-    row-gap:1.5rem;
-}
-
-.nav-img{
-    height:200px;
-    width:130px;
-    object-fit:contain;
-}
+/* ===================== MISCELLANEOUS CSS ====================== */
 
 ::-webkit-scrollbar{
     width:0.5rem;
@@ -269,4 +247,299 @@ p.talent-speech{
 ::-webkit-scrollbar-thumb{
     background-color:#3b3c40;
     border-radius:1rem;
+}
+
+@media (min-width:1366px)
+{
+    .Talent-area:nth-child(10){
+        grid-column: 2 / 3;
+    }
+}
+
+@media (max-width:1920px)
+{
+    /* ==================== TALENTS CSS ==================== */
+
+    .section{
+        max-width:960px;
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .Talent-overview{
+        margin-top:5.5rem;
+        justify-content:space-between;
+    }
+
+    /* ==================== TALENT OVERVIEW ==================== */
+    .Talent-overview{
+        flex-direction:row;
+    }
+
+    .section-title{
+        font-size: 5rem;
+        font-weight:600;
+        letter-spacing: -.125rem;
+        line-height: 95%;
+
+        max-width:440px;
+    }
+
+    .section-text{
+        max-width:440px;
+        font-size: 1.5rem;
+        line-height:125%;
+
+        margin-top:1rem;
+    }
+
+    /* ==================== SOCIAL STYLES ==================== */
+    .Talent-socials{
+        gap:1rem;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    /* ==================== TALENT CARD STYLES ==================== */
+
+    .Talent-show{
+        max-width:1600px;
+        width:100%;
+        margin-top:11.5rem;
+        margin-left:auto;
+        margin-right:auto;
+        column-gap:5rem;
+        row-gap:8rem;
+
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+    .Talent-area{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        row-gap:2.25rem;
+
+        max-width:380px;
+        height:412px;
+    }
+
+    .Talent-name{
+        margin-left:auto;
+        margin-right:auto;
+        grid-column:2/2;
+    }
+
+    /* ==================== TALENT CARD ==================== */
+
+    .talent-speech-area{
+        place-items: center;
+        text-align: center;
+        
+        font-size: 1.2rem;
+        font-weight: 600;
+        
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+        will-change: opacity;
+
+        border-radius:15%;
+        height:inherit;
+
+        background: #ffffffc0;
+        padding: 1.2rem;
+    }
+
+    .talent-speech-area:hover{
+        transition: opacity .2s ease-in-out;
+        will-change: opacity;
+        opacity:1;
+    }
+
+    p.talent-speech{
+        color:var(--vshojo-dark-gray);
+    }
+
+        /* ==================== FOOTER CSS ====================  COPY ALL SITES*/
+        .footer{
+            background:var(--vshojo-dark-gray);
+            color:var(--white);
+    
+            padding-top:3.125rem;
+            padding-bottom:3.125rem;
+    
+            overflow-x:hidden;
+        }
+    
+        .footer-content{
+            max-width:1780px;
+            width:100%;
+    
+            margin-left:auto;
+            margin-right:auto;
+        }
+    
+        /*===== Footer list items CSS =====*/
+        .socials-list-items{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:1.125rem;
+        }
+    
+        .links-list-items{
+            display:flex;
+            flex-direction:column;
+            gap:.5rem;
+        }
+    
+        .socials-list-items{
+            margin-right:1.75rem;
+        }
+    
+        h3.footer-titles{
+            margin-bottom:.75rem;
+        }
+    
+        .contact-logo > img{
+            margin-bottom:.75rem;
+        }
+    
+        /*===== Footer list CSS =====*/
+        .contact-list{
+            margin-left:auto;
+        }
+    
+        .socials-list{
+            padding-left:3rem;
+        }
+    
+        .links-list-items > li > a{
+            color:var(--white);
+        }
+    
+        .contact-address{
+            display:block;
+            width:120px;
+            line-height:115%;
+        }
+    
+        .footer-titles{
+            color:var(--vshojo-light-gray);
+            font-weight:400;
+        }
+
+    /* ==================== Naviagation CSS ====================  COPY ALL SITES*/
+    .nav {
+        margin-top:2.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: calc(3.5rem + 1.5rem);
+        column-gap: 3rem;
+    }
+    
+    .container {
+        max-width: 1750px;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    .nav__menu {
+        margin-left: auto;
+    }
+    
+    .nav__list {
+        display:flex;
+        flex-direction:row;
+        column-gap:3.5rem;
+        row-gap:1.5rem;
+    }
+    
+    .nav-img{
+        height:200px;
+        width:130px;
+        object-fit:contain;
+    }
+}
+
+@media (max-width:1248px)
+{
+
+}
+
+
+@media (max-width:832px)
+{
+
+}
+
+
+@media (max-width:750px)
+{
+    .Talent-overview{
+        flex-direction:column;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:230px;
+    }
+
+    .section-title{
+        font-size:2.5rem;
+        margin-bottom:.25rem;
+    }
+
+    .section-text{
+        font-size:.95rem;
+    }
+
+/* Talent CSS */
+
+    .Talent-show{
+        grid-template-columns:repeat(1, 1fr);
+        max-width:500px;
+        place-items:center;
+        row-gap:4rem;
+    }
+
+    .Talent-socials{
+        display:none;
+    }
+
+    .Talent-area{
+        grid-template-columns:repeat(1, 1fr);
+        max-width:320px;
+        height:255px;
+        row-gap:1rem;
+    }
+
+    .Talent-name{
+        grid-column: 1 / 1;
+        font-size:.65rem;
+    }
+
+    .talent-img-area{
+        height:200px;
+        width:200px;
+        background-size:cover;
+        border-radius:7%;
+    }
+
+    .contact-list{
+        display:none;
+    }
+
+    .footer-content{
+        justify-content:space-between;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+
+    .nav__list{
+        display:none;
+    }
 }
